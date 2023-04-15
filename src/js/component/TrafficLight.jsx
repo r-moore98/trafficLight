@@ -1,21 +1,20 @@
 import React, {useEffect, useState} from "react";
 
-//include images into your bundle
-
-//create your first component
-const TrafficLight = (props) => {
+const TrafficLight = () => {//props
 
     const [trafficColor, setTrafficColor] = useState(null);
 
-    useEffect(()=> {
-
-    },[trafficColor])
-
     return(
-        <div>
-            <button onClick={()=> setTrafficColor('red')} className={"redbutton glow"}/>
-            <button onClick={()=> setTrafficColor('yellow')}/>
-            <button onClick={()=> setTrafficColor('green')}/>
+        <div className="TrafficLight">
+            <button onClick={()=> setTrafficColor('red')} 
+            className={
+                "redbutton " + (trafficColor === "red" ? "redglow":"")}/>
+            <button onClick={()=> setTrafficColor('yellow')} 
+            className={
+                "yellowbutton "+ (trafficColor === "yellow" ? "yellowglow":"")}/>
+            <button onClick={()=> setTrafficColor('green') } 
+            className={
+                "greenbutton " + (trafficColor === "green" ? "greenglow":"")}/>
         </div>
     );
 }

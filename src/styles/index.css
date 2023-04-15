@@ -10,3 +10,41 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+.TrafficLight{
+    background-color: black;
+    border-radius: 25px;
+    padding: 10px;
+    display: inline-block;
+    margin: auto;
+}
+
+.redbutton{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: red;
+    display: block;
+}
+.yellowbutton{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: yellow;
+    display: block;
+}
+.greenbutton{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: green;
+    display: block;
+}
+.redglow{
+    box-shadow: 0px 0px 15px 15px red;
+}
+.yellowglow{
+    box-shadow: 0px 0px 15px 15px yellow;
+}
+.greenglow{
+    box-shadow: 0px 0px 15px 15px green;
+}
